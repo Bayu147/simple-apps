@@ -38,5 +38,13 @@ pipeline {
                 '''
             }
         }
+        stage('Upload to Registry Image') {
+            steps {
+                sh '''
+                Docker tag simple-apps-apps bayu147/simple-apps-apps:v1.0
+                Docker push bayu147/simple-apps-apps:v1.0
+                '''
+            }
+        }
     }
 }
