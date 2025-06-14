@@ -1,7 +1,7 @@
 pipeline {
     agent { label 'DOCKER-BAYU' }
     
-    tools {nodejs "nodejs-18.16"}
+    tools {nodejs "Nodejs-18.16"}
 
     stages {
         stage('Checkout SCM') {
