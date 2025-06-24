@@ -39,6 +39,7 @@ pipeline {
                 -Dsonar.login=${SONAR_TOKEN}'''
             }
         }
+    }
         stage('Deploy compose Container') {
             steps {
                 sh '''
